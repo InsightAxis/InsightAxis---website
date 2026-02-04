@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightAxis | Predictive Analytics</title>
+    <style>
+        /* --- Global Styles --- */
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; color: #111; background: #fff; }
+        a { text-decoration: none; color: #0D6EFD; }
+        header, nav, section, footer { padding: 60px 20px; }
+        h1, h2, h3 { margin: 0 0 20px 0; }
+        p { margin: 0 0 20px 0; line-height: 1.6; }
+
+        /* --- Navigation --- */
+        nav { display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 20px 40px; position: sticky; top: 0; z-index: 10; }
+        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+        nav li { font-weight: bold; }
+
+        /* --- Hero Section --- */
+        .hero { text-align: center; padding: 100px 20px; background: #f1f3f5; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.2em; margin-bottom: 40px; }
+        .hero a {
+            padding: 15px 30px;
+            background: #0D6EFD;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        /* --- Sections --- */
+        section { max-width: 1100px; margin: 0 auto; }
+        .features { display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-around; text-align: center; }
+        .feature { flex: 1 1 250px; }
+        .cta { text-align: center; padding: 60px 20px; background: #e9ecef; }
+        .cta a { font-size: 1.2em; padding: 15px 30px; background: #0D6EFD; color: #fff; border-radius: 5px; display: inline-block; }
+
+        /* --- Dashboard Section --- */
+        .dashboard-section { padding: 60px 20px; background: #f8f9fa; text-align: center; }
+        iframe { width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 8px; }
+
+        /* --- Footer --- */
+        footer { text-align: center; background: #f8f9fa; padding: 40px 20px; font-size: 0.9em; color: #666; }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px){
+            .features { flex-direction: column; }
+            .hero h1 { font-size: 2.2em; }
+            iframe { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><strong>InsightAxis</strong></div>
+        <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Predict Tomorrow. Decide with Confidence.</h1>
+        <p>InsightAxis helps organisations turn historical data into actionable forecasts, manage operational and financial risk, and optimise decisions with secure, predictive analytics.</p>
+        <a href="#contact">Request a Pilot</a>
+        <a href="#product">Learn About ForecastIQ</a>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product">
+        <h2>ForecastIQ – Our Flagship Product</h2>
+        <p>ForecastIQ provides accurate sales forecasts, inventory risk insights, and financial impact analysis to help retail organisations make confident decisions.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Sales Forecasting</h3>
+                <p>Predict daily, weekly, and monthly demand with confidence intervals and actionable insights.</p>
+            </div>
+            <div class="feature">
+                <h3>Inventory Risk</h3>
+                <p>Identify stock-out and overstock risks before they impact revenue and profit.</p>
+            </div>
+            <div class="feature">
+                <h3>Financial Insights</h3>
+                <p>Translate forecasts into profit, margin, and cash-flow analysis for board-ready decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries">
+        <h2>Industries We Serve</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Retail</h3>
+                <p>Accurate sales forecasting, inventory optimisation, and margin protection.</p>
+            </div>
+            <div class="feature">
+                <h3>Education</h3>
+                <p>Enrollment and funding forecasting, resource planning, and operational insights.</p>
+            </div>
+            <div class="feature">
+                <h3>Logistics</h3>
+                <p>Cost prediction, route optimisation, and operational efficiency insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <h2>ForecastIQ Live Demo</h2>
+        <p>Interact with our MVP dashboard to explore sales forecasts, inventory risk, and financial impact in action.</p>
+        <!-- Replace src with your Streamlit or deployed dashboard URL -->
+        <iframe src="https://your-dashboard-link.com" title="ForecastIQ Dashboard"></iframe>
+        <p><em>Demo data used for illustration. Real pilots are customised to your organisation's data.</em></p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About InsightAxis</h2>
+        <p>InsightAxis is a South Africa–based decision-intelligence startup providing predictive analytics solutions for organisations worldwide. Our mission is to help businesses anticipate risk, optimise performance, and make confident decisions through secure, predictive, and industry-focused analytics.</p>
+        <h3>Founder – Sandile Ngwenya</h3>
+        <p>Certified developer and aspiring data analyst, passionate about building secure, explainable, and impactful analytics solutions that solve real-world business problems.</p>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="cta">
+        <h2>Start Your 30-Day Pilot Today</h2>
+        <p>InsightAxis offers a limited pilot programme for retail organisations looking to improve forecasting accuracy, reduce inventory risk, and optimise profit.</p>
+        <a href="mailto:info@insightaxis.com">Request Pilot Access</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        InsightAxis © 2026 | info@insightaxis.com | LinkedIn
+    </footer>
+
+</body>
+</html>
